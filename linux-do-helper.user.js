@@ -475,6 +475,31 @@
         let hideTimer = null;
         let isInputFocused = false;
 
+        // 检查用户是否登录
+        const checkLoginStatus = () => {
+            const isLoggedIn = document.querySelector('#current-user, .current-user');
+            if (commentBtn) {
+                commentBtn.style.display = isLoggedIn ? 'flex' : 'none';
+            }
+        };
+
+        // 初始检查
+        checkLoginStatus();
+
+        // 监听 DOM 变化，处理单页应用路由切换（使用节流避免频繁检查）
+        let checkTimer = null;
+        const observer = new MutationObserver(() => {
+            if (checkTimer) return;
+            checkTimer = setTimeout(() => {
+                checkLoginStatus();
+                checkTimer = null;
+            }, 500);
+        });
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+
         // 鼠标悬浮显示面板
         commentBtn.addEventListener('mouseenter', () => {
             clearTimeout(hideTimer);

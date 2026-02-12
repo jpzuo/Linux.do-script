@@ -1,0 +1,31 @@
+{
+  "name": "client-script",
+  "version": "1.0.0",
+  "description": "一个为 [Linux.do](https://linux.do) 社区设计的油猴脚本，提供快捷评论和便捷操作功能。",
+  "homepage": "https://github.com/zb-zd/Linux.do-sidebar-script#readme",
+  "bugs": {
+    "url": "https://github.com/zb-zd/Linux.do-sidebar-script/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zb-zd/Linux.do-sidebar-script.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "linux-do-helper.user.js",
+  "scripts": {
+    "build": "terser linux-do-helper.user.js -o linux-do-helper.min.user.js --compress --mangle --comments \"/^!|==UserScript==|@name|@namespace|@version|@description|@author|@match|@grant|@run-at|==\\\\/UserScript==/\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "buffer-from": "^1.1.2",
+    "commander": "^2.20.3",
+    "source-map": "^0.6.1",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "terser": "^5.46.0"
+  }
+}

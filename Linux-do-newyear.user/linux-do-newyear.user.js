@@ -58,12 +58,32 @@ body::after{
 .topic-post,
 .list-container,
 .navigation-container,
+.sidebar-wrapper,
+.sidebar-container,
+.sidebar-sections,
+.sidebar-custom-sections,
+.sidebar-section-wrapper,
+.sidebar-footer-container,
+.topic-navigation,
+.topic-timeline,
+.timeline-container,
 .user-main .about,
 .category-box,
 .categories-and-latest{
   background:rgba(255,246,228,.95) !important;
-  border:1px solid rgba(212,160,23,.35) !important;
+  border:none !important;
   box-shadow:none !important;
+}
+
+.topic-timeline .timeline-scrollarea,
+.topic-timeline .timeline-footer-controls,
+.topic-navigation .timeline-container,
+.sidebar-wrapper,
+.sidebar-container,
+.sidebar-section-content,
+.sidebar-footer-wrapper,
+.sidebar-footer-container{
+  background:rgba(255,246,228,.95) !important;
 }
 
 a,
@@ -88,7 +108,7 @@ a,
 }
 
 #topic-title{
-  border-left:4px solid rgba(245, 215, 110, .9);
+  border-left:none !important;
   padding-left:10px;
 }
 
@@ -107,7 +127,7 @@ a,
 .topic-list .discourse-tags .discourse-tag{
   color:#7c2600 !important;
   background:rgba(245, 215, 110, .35) !important;
-  border-color:rgba(212,160,23,.55) !important;
+  border-color:transparent !important;
 }
 
 .btn-primary,

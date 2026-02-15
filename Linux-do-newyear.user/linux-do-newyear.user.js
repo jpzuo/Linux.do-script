@@ -84,8 +84,13 @@ body::after{
 .user-preferences,
 .user-main,
 .user-content,
-.menu-panel.drop-down{
-  background:rgba(255,246,228,.95) !important;
+.menu-panel.drop-down,
+.topic-list,
+.topic-list-item,
+tbody,
+.latest-topic-list,
+.latest-topic-list-item{
+  background:rgba(255,240,220,.95) !important;
   border:none !important;
   box-shadow:none !important;
 }
@@ -99,7 +104,7 @@ body::after{
 
 .search-container .search-header,
 .full-page-search .search-advanced-sidebar{
-  background:rgba(255,246,228,.95) !important;
+  background:rgba(255,240,220,.95) !important;
   border:1px solid rgba(212,160,23,.3) !important;
   border-radius:6px !important;
   box-shadow:0 2px 8px rgba(139,0,0,.1) !important;
@@ -119,7 +124,7 @@ body::after{
 .sidebar-section-content,
 .sidebar-footer-wrapper,
 .sidebar-footer-container{
-  background:rgba(255,246,228,.95) !important;
+  background:rgba(255,240,220,.95) !important;
 }
 
 a,
@@ -177,7 +182,7 @@ a,
 .menu-panel.drop-down,
 .user-menu .quick-access-panel,
 .user-menu .panel-body{
-  background:rgba(255,246,228,.98) !important;
+  background:rgba(255,240,220,.98) !important;
   border:1px solid rgba(212,160,23,.4) !important;
   border-radius:6px !important;
   box-shadow:0 4px 12px rgba(139,0,0,.2) !important;
@@ -197,7 +202,7 @@ a,
 .full-page-search input[type="text"],
 .full-page-search .search-query,
 input.full-page-search{
-  background:rgba(255,246,228,.98) !important;
+  background:rgba(255,240,220,.98) !important;
   border:1px solid rgba(212,160,23,.5) !important;
   color:#651010 !important;
 }

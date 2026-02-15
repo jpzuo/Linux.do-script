@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "Linux-do-helper.user/linux-do-helper.user.js",
   "scripts": {
-    "build": "node Linux-do-helper.user/build.js",
+    "build": "node Linux-do-helper.user/build.js && node Linux-do-newyear.user/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

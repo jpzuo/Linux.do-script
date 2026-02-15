@@ -2,8 +2,8 @@ const fs = require("fs/promises");
 const path = require("path");
 const terser = require("terser");
 
-const INPUT_FILE = "linux-do-helper.user.js";
-const OUTPUT_FILE = "linux-do-helper.min.user.js";
+const INPUT_FILE = "linux-do-newyear.user.js";
+const OUTPUT_FILE = "linux-do-newyear.min.user.js";
 const TERSER_OPTIONS = {
   ecma: 2020,
   compress: {
@@ -35,7 +35,6 @@ async function build() {
 
   const header = headerMatch[0].trim();
   const body = source.replace(headerMatch[0], "").trim();
-
   const result = await terser.minify(body, TERSER_OPTIONS);
 
   if (!result.code) {
